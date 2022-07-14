@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188FC8412880299600C350F5 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8402880299600C350F5 /* RandomColor.swift */; };
 		4BE9C51F8B2271A9A5398DC2 /* Pods_TestSocialSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545423C721EFEAA45AA9B43C /* Pods_TestSocialSDK_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0EDE7D56614DB69F11FC5EF9 /* Pods-TestSocialSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSocialSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-TestSocialSDK_Example/Pods-TestSocialSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		188FC8402880299600C350F5 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		545423C721EFEAA45AA9B43C /* Pods_TestSocialSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSocialSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* TestSocialSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSocialSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188FC83F2880297700C350F5 /* RandomColor */ = {
+			isa = PBXGroup;
+			children = (
+				188FC8402880299600C350F5 /* RandomColor.swift */,
+			);
+			path = RandomColor;
+			sourceTree = "<group>";
+		};
 		4D0B227B2363B58453C1AB8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				188FC83F2880297700C350F5 /* RandomColor */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for TestSocialSDK */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -332,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				188FC8412880299600C350F5 /* RandomColor.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
