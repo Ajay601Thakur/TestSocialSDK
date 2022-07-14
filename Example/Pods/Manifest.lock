@@ -1,0 +1,16 @@
+PODS:
+  - TestSocialSDK (0.1.0)
+
+DEPENDENCIES:
+  - TestSocialSDK (from `../`)
+
+EXTERNAL SOURCES:
+  TestSocialSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TestSocialSDK: c48b8ce9301482c21153f08444bb86c6b95f686d
+
+PODFILE CHECKSUM: b9a3d0a81cbe03860914a473b5ef94505913808b
+
+COCOAPODS: 1.11.3
