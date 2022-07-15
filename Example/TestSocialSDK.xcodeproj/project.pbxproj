@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		188FC8412880299600C350F5 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8402880299600C350F5 /* RandomColor.swift */; };
+		18909811288149FE00572676 /* TestSocialSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18909810288149FE00572676 /* TestSocialSDK.framework */; };
+		18909812288149FE00572676 /* TestSocialSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18909810288149FE00572676 /* TestSocialSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1890981528814BFB00572676 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1890981428814BFB00572676 /* ARKit.framework */; };
 		4BE9C51F8B2271A9A5398DC2 /* Pods_TestSocialSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545423C721EFEAA45AA9B43C /* Pods_TestSocialSDK_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,9 +31,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18909813288149FE00572676 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18909812288149FE00572676 /* TestSocialSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0EDE7D56614DB69F11FC5EF9 /* Pods-TestSocialSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSocialSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-TestSocialSDK_Example/Pods-TestSocialSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		188FC8402880299600C350F5 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		18909810288149FE00572676 /* TestSocialSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestSocialSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1890981428814BFB00572676 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		545423C721EFEAA45AA9B43C /* Pods_TestSocialSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSocialSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* TestSocialSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSocialSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1890981528814BFB00572676 /* ARKit.framework in Frameworks */,
+				18909811288149FE00572676 /* TestSocialSDK.framework in Frameworks */,
 				4BE9C51F8B2271A9A5398DC2 /* Pods_TestSocialSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +185,8 @@
 		83258F82143D8DBDE6401AB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1890981428814BFB00572676 /* ARKit.framework */,
+				18909810288149FE00572676 /* TestSocialSDK.framework */,
 				545423C721EFEAA45AA9B43C /* Pods_TestSocialSDK_Example.framework */,
 				A90467A3FB8D73CA30174B1F /* Pods_TestSocialSDK_Tests.framework */,
 			);
@@ -182,6 +205,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				EDFF480687686DAD7BB3A082 /* [CP] Embed Pods Frameworks */,
+				18909813288149FE00572676 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -521,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F3EB515042415E8A2B9B6876 /* Pods-TestSocialSDK_Tests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE637BF05E4F5B0CD6E1DA83 /* Pods-TestSocialSDK_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
