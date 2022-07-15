@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestSocialSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'This app is using for learning Purpose.'
 
   s.description      = <<-DESC
